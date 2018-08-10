@@ -1,0 +1,33 @@
+<nav class="navbar background_col fixed-top  navbar-expand-lg ">
+  <div class="container">
+    <div class="navbar-translate">
+    <%= link_to root_path  do%>
+<img class="animated slideInLeft" src="<%= image_path('logo-04a587026b3708641904f08a5e2fa77a.png') %>" alt="logo" width="" height="50">
+<% end %>
+</nav>
+<nav class="navbar background_col1   navbar-expand-lg">
+  <div class="container">
+    <div class="navbar-translate">
+      <%= link_to "ECONOMY", root_path, class:"navbar-brand" %>
+      <button type="button" class="ml-auto navbar-toggler" data-toggle="collapse" data-target="#navigation-example4">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navigation-example4">
+      <ul class="navbar-nav navbar-center ml-auto">
+        <li class="nav-item animated slideInUp">
+          <%= link_to "Units", units_path, class:"nav-link" %>
+        </li>
+        <li class="nav-item animated slideInUp">
+            <%= link_to "Info", info_path, class:"nav-link" %>
+          </li>
+          <li class="nav-item animated slideInUp">
+            <%= link_to "Faq", faq_path, class:"nav-link" %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
